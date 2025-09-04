@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Parabéns</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        #mensagem {
+            margin-top: 30px;
+            font-size: 24px;
+            color: #ff4081;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="mostrarParabens()">Clique aqui!</button>
+    <p id="mensagem"></p>
+
+    <script>
+        function mostrarParabens() {
+            document.getElementById("mensagem").innerText = "🎉 Parabéns! 🎉";
+        }
+    </script>
+
+</body>
+</html>
